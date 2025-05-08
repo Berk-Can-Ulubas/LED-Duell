@@ -23,12 +23,12 @@ while True:
     current_button2 = button2.value()
     
     
-    if button1.value() == 1 and prev_button1 == 0 and current_led < len(led_pins) - 1: #if button 1 is pressed current led is turned off and next led is turned on
+    if current_button1 == 1 and prev_button1 == 0 and current_button2 == 0 and current_led < len(led_pins) - 1: #if button 1 is pressed current led is turned off and next led is turned on
       led_pins[current_led].value(0)
       current_led += 1
       led_pins[current_led].value(1)
       
-    elif button2.value() == 1 and prev_button2 == 0 and current_led > 0: #if button 1 is pressed current led is turned off and previous led is turned on
+    elif current_button2 == 1 and prev_button2 == 0 and current_button1 == 0 and current_led > 0: #if button 1 is pressed current led is turned off and previous led is turned on
       led_pins[current_led].value(0)
       current_led -= 1
       led_pins[current_led].value(1)
