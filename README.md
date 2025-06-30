@@ -18,6 +18,7 @@ The goal is to push the LED to the opponent’s end, which means you have to pre
 
 ## 🔌 Wiring Diagram
 
+![led_duell_Schaltplan](https://github.com/user-attachments/assets/0238ea6a-78c9-41f4-ae2f-14b056afd766)
 
 
 ## 🚀 Installation
